@@ -7,49 +7,49 @@
 # server's style to it's defaults.
 
 # Theme options
-set -goq @theme-clock-mode-colour blue
-set -goq @theme-clock-mode-style 24
-set -goq @theme-display-panes-active-colour red
-set -goq @theme-display-panes-colour blue
-set -goq @theme-message-bg yellow
-set -goq @theme-message-command-bg green
-set -goq @theme-message-command-fg black
-set -goq @theme-message-fg black
-set -goq @theme-mode-bg yellow
-set -goq @theme-mode-fg black
-set -goq @theme-pane-active-border-bg default
-set -goq @theme-pane-active-border-fg green
-set -goq @theme-pane-border-bg default
-set -goq @theme-pane-border-fg white
-set -goq @theme-status-bg green
-set -goq @theme-status-fg black
-set -goq @theme-status-interval 15
-set -goq @theme-status-justify left
-set -goq @theme-status-left "[#S] "
-set -goq @theme-status-left-bg green
-set -goq @theme-status-left-fg black
-set -goq @theme-status-left-length 40
-set -goq @theme-status-right " \"#H\" %H:%M %d-%b-%y"
-set -goq @theme-status-right-bg green
-set -goq @theme-status-right-fg black
-set -goq @theme-status-right-length 40
-set -goq @theme-window-status-activity-bg black
-set -goq @theme-window-status-activity-fg green
-set -goq @theme-window-status-current-bg green
-set -goq @theme-window-status-current-fg black
-set -goq @theme-window-status-current-format "#I:#W#F"
-set -goq @theme-window-status-format "#I:#W#F"
-set -goq @theme-window-status-separator " "
+set -gq @theme-clock-mode-colour blue
+set -gq @theme-clock-mode-style 24
+set -gq @theme-display-panes-active-colour red
+set -gq @theme-display-panes-colour blue
+set -gq @theme-message-bg yellow
+set -gq @theme-message-command-bg green
+set -gq @theme-message-command-fg black
+set -gq @theme-message-fg black
+set -gq @theme-mode-bg yellow
+set -gq @theme-mode-fg black
+set -gq @theme-pane-active-border-bg default
+set -gq @theme-pane-active-border-fg green
+set -gq @theme-pane-border-bg default
+set -gq @theme-pane-border-fg white
+set -gq @theme-status-bg green
+set -gq @theme-status-fg black
+set -gq @theme-status-interval 15
+set -gq @theme-status-justify left
+set -gq @theme-status-left "[#S] "
+set -gq @theme-status-left-bg green
+set -gq @theme-status-left-fg black
+set -gq @theme-status-left-length 40
+set -gq @theme-status-right " \"#H\" %H:%M %d-%b-%y"
+set -gq @theme-status-right-bg green
+set -gq @theme-status-right-fg black
+set -gq @theme-status-right-length 40
+set -gq @theme-window-status-activity-bg black
+set -gq @theme-window-status-activity-fg green
+set -gq @theme-window-status-current-bg green
+set -gq @theme-window-status-current-fg black
+set -gq @theme-window-status-current-format "#I:#W#F"
+set -gq @theme-window-status-format "#I:#W#F"
+set -gq @theme-window-status-separator " "
 
 # Customizable prefixes and suffixes for @theme-* format options
-set -goq @theme-status-left-prefix ""
-set -goq @theme-status-left-suffix ""
-set -goq @theme-status-right-prefix ""
-set -goq @theme-status-right-suffix ""
-set -goq @theme-window-status-current-prefix ""
-set -goq @theme-window-status-current-suffix ""
-set -goq @theme-window-status-prefix ""
-set -goq @theme-window-status-suffix ""
+set -gq @theme-status-left-prefix ""
+set -gq @theme-status-left-suffix ""
+set -gq @theme-status-right-prefix ""
+set -gq @theme-status-right-suffix ""
+set -gq @theme-window-status-current-prefix ""
+set -gq @theme-window-status-current-suffix ""
+set -gq @theme-window-status-prefix ""
+set -gq @theme-window-status-suffix ""
 
 # Apply prefixes and suffixes to @theme-* format options
 set -gqF @theme-status-left "#{@theme-status-left-prefix}#{@theme-status-left}#{@theme-status-left-suffix}"

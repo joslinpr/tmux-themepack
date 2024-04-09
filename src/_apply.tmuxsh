@@ -1,12 +1,12 @@
 # Customizable prefixes and suffixes for @theme-* format options
-set -goq @theme-status-left-prefix ""
-set -goq @theme-status-left-suffix ""
-set -goq @theme-status-right-prefix ""
-set -goq @theme-status-right-suffix ""
-set -goq @theme-window-status-current-prefix ""
-set -goq @theme-window-status-current-suffix ""
-set -goq @theme-window-status-prefix ""
-set -goq @theme-window-status-suffix ""
+set -gq @theme-status-left-prefix ""
+set -gq @theme-status-left-suffix ""
+set -gq @theme-status-right-prefix ""
+set -gq @theme-status-right-suffix ""
+set -gq @theme-window-status-current-prefix ""
+set -gq @theme-window-status-current-suffix ""
+set -gq @theme-window-status-prefix ""
+set -gq @theme-window-status-suffix ""
 
 # Apply prefixes and suffixes to @theme-* format options
 set -gqF @theme-status-left "#{@theme-status-left-prefix}#{@theme-status-left}#{@theme-status-left-suffix}"

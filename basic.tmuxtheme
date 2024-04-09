@@ -3,32 +3,32 @@
 #
 
 # Themepack format options
-set -goq @themepack-status-left-area-left-format "#S"
-set -goq @themepack-status-left-area-middle-format "#I"
-set -goq @themepack-status-left-area-right-format "#P"
-set -goq @themepack-status-right-area-left-format "#H"
-set -goq @themepack-status-right-area-middle-format "%H:%M:%S"
-set -goq @themepack-status-right-area-right-format "%d-%b-%y"
-set -goq @themepack-window-status-current-format "#I:#W#F"
-set -goq @themepack-window-status-format "#I:#W#F"
+set -gq @themepack-status-left-area-left-format "#S"
+set -gq @themepack-status-left-area-middle-format "#I"
+set -gq @themepack-status-left-area-right-format "#P"
+set -gq @themepack-status-right-area-left-format "#H"
+set -gq @themepack-status-right-area-middle-format "%H:%M:%S"
+set -gq @themepack-status-right-area-right-format "%d-%b-%y"
+set -gq @themepack-window-status-current-format "#I:#W#F"
+set -gq @themepack-window-status-format "#I:#W#F"
 
 # Customizable prefixes and suffixes for @themepack-* format options
-set -goq @themepack-status-left-area-left-prefix ""
-set -goq @themepack-status-left-area-left-suffix ""
-set -goq @themepack-status-left-area-middle-prefix ""
-set -goq @themepack-status-left-area-middle-suffix ""
-set -goq @themepack-status-left-area-right-prefix ""
-set -goq @themepack-status-left-area-right-suffix ""
-set -goq @themepack-status-right-area-left-prefix ""
-set -goq @themepack-status-right-area-left-suffix ""
-set -goq @themepack-status-right-area-middle-prefix ""
-set -goq @themepack-status-right-area-middle-suffix ""
-set -goq @themepack-status-right-area-right-prefix ""
-set -goq @themepack-status-right-area-right-suffix ""
-set -goq @themepack-window-status-current-prefix ""
-set -goq @themepack-window-status-current-suffix ""
-set -goq @themepack-window-status-prefix ""
-set -goq @themepack-window-status-suffix ""
+set -gq @themepack-status-left-area-left-prefix ""
+set -gq @themepack-status-left-area-left-suffix ""
+set -gq @themepack-status-left-area-middle-prefix ""
+set -gq @themepack-status-left-area-middle-suffix ""
+set -gq @themepack-status-left-area-right-prefix ""
+set -gq @themepack-status-left-area-right-suffix ""
+set -gq @themepack-status-right-area-left-prefix ""
+set -gq @themepack-status-right-area-left-suffix ""
+set -gq @themepack-status-right-area-middle-prefix ""
+set -gq @themepack-status-right-area-middle-suffix ""
+set -gq @themepack-status-right-area-right-prefix ""
+set -gq @themepack-status-right-area-right-suffix ""
+set -gq @themepack-window-status-current-prefix ""
+set -gq @themepack-window-status-current-suffix ""
+set -gq @themepack-window-status-prefix ""
+set -gq @themepack-window-status-suffix ""
 
 # Apply prefixes and suffixes to @themepack-* format options
 set -gqF @themepack-status-left-area-left-format "#{@themepack-status-left-area-left-prefix}#{@themepack-status-left-area-left-format}#{@themepack-status-left-area-left-suffix}"
@@ -41,49 +41,49 @@ set -gqF @themepack-window-status-current-format "#{@themepack-window-status-cur
 set -gqF @themepack-window-status-format "#{@themepack-window-status-prefix}#{@themepack-window-status-format}#{@themepack-window-status-suffix}"
 
 # Theme options
-set -goq  @theme-clock-mode-colour red
-set -goq  @theme-clock-mode-style 24
-set -goq  @theme-display-panes-active-colour default
-set -goq  @theme-display-panes-colour default
-set -goq  @theme-message-bg default
-set -goq  @theme-message-command-bg default
-set -goq  @theme-message-command-fg default
-set -goq  @theme-message-fg default
-set -goq  @theme-mode-bg red
-set -goq  @theme-mode-fg default
-set -goq  @theme-pane-active-border-bg default
-set -goq  @theme-pane-active-border-fg green
-set -goq  @theme-pane-border-bg default
-set -goq  @theme-pane-border-fg default
-set -goq  @theme-status-bg black
-set -goq  @theme-status-fg cyan
-set -goq  @theme-status-interval 1
-set -goq  @theme-status-justify centre
-set -goqF @theme-status-left "#{@themepack-status-left-area-left-format} #[fg=white]» #[fg=yellow]#{@themepack-status-left-area-middle-format} #[fg=cyan]#{@themepack-status-left-area-right-format}"
-set -goq  @theme-status-left-bg black
-set -goq  @theme-status-left-fg green
-set -goq  @theme-status-left-length 40
-set -goqF @theme-status-right "#{@themepack-status-right-area-left-format} #[fg=white]« #[fg=yellow]#{@themepack-status-right-area-middle-format} #[fg=green]#{@themepack-status-right-area-right-format}"
-set -goq  @theme-status-right-bg black
-set -goq  @theme-status-right-fg cyan
-set -goq  @theme-status-right-length 40
-set -goq  @theme-window-status-activity-bg black
-set -goq  @theme-window-status-activity-fg yellow
-set -goq  @theme-window-status-current-bg red
-set -goq  @theme-window-status-current-fg black
-set -goqF @theme-window-status-current-format " #{@themepack-window-status-current-format} "
-set -goqF @theme-window-status-format " #{@themepack-window-status-format} "
-set -goq  @theme-window-status-separator ""
+set -gq  @theme-clock-mode-colour red
+set -gq  @theme-clock-mode-style 24
+set -gq  @theme-display-panes-active-colour default
+set -gq  @theme-display-panes-colour default
+set -gq  @theme-message-bg default
+set -gq  @theme-message-command-bg default
+set -gq  @theme-message-command-fg default
+set -gq  @theme-message-fg default
+set -gq  @theme-mode-bg red
+set -gq  @theme-mode-fg default
+set -gq  @theme-pane-active-border-bg default
+set -gq  @theme-pane-active-border-fg green
+set -gq  @theme-pane-border-bg default
+set -gq  @theme-pane-border-fg default
+set -gq  @theme-status-bg black
+set -gq  @theme-status-fg cyan
+set -gq  @theme-status-interval 1
+set -gq  @theme-status-justify centre
+set -gqF @theme-status-left "#{@themepack-status-left-area-left-format} #[fg=white]» #[fg=yellow]#{@themepack-status-left-area-middle-format} #[fg=cyan]#{@themepack-status-left-area-right-format}"
+set -gq  @theme-status-left-bg black
+set -gq  @theme-status-left-fg green
+set -gq  @theme-status-left-length 40
+set -gqF @theme-status-right "#{@themepack-status-right-area-left-format} #[fg=white]« #[fg=yellow]#{@themepack-status-right-area-middle-format} #[fg=green]#{@themepack-status-right-area-right-format}"
+set -gq  @theme-status-right-bg black
+set -gq  @theme-status-right-fg cyan
+set -gq  @theme-status-right-length 40
+set -gq  @theme-window-status-activity-bg black
+set -gq  @theme-window-status-activity-fg yellow
+set -gq  @theme-window-status-current-bg red
+set -gq  @theme-window-status-current-fg black
+set -gqF @theme-window-status-current-format " #{@themepack-window-status-current-format} "
+set -gqF @theme-window-status-format " #{@themepack-window-status-format} "
+set -gq  @theme-window-status-separator ""
 
 # Customizable prefixes and suffixes for @theme-* format options
-set -goq @theme-status-left-prefix ""
-set -goq @theme-status-left-suffix ""
-set -goq @theme-status-right-prefix ""
-set -goq @theme-status-right-suffix ""
-set -goq @theme-window-status-current-prefix ""
-set -goq @theme-window-status-current-suffix ""
-set -goq @theme-window-status-prefix ""
-set -goq @theme-window-status-suffix ""
+set -gq @theme-status-left-prefix ""
+set -gq @theme-status-left-suffix ""
+set -gq @theme-status-right-prefix ""
+set -gq @theme-status-right-suffix ""
+set -gq @theme-window-status-current-prefix ""
+set -gq @theme-window-status-current-suffix ""
+set -gq @theme-window-status-prefix ""
+set -gq @theme-window-status-suffix ""
 
 # Apply prefixes and suffixes to @theme-* format options
 set -gqF @theme-status-left "#{@theme-status-left-prefix}#{@theme-status-left}#{@theme-status-left-suffix}"
