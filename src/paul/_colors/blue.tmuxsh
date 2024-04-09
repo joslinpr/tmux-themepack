@@ -1,0 +1,3 @@
+set -gq @paul-color-main-1 colour24
+set -gq @paul-color-main-2 colour33
+set -gq @paul-color-main-3 colour31

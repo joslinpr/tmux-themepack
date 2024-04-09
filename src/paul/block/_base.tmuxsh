@@ -1,0 +1,11 @@
+#= include "paul/_colors/base"
+
+# Powerline Block Override
+set -gqF @paul-color-activity-1 "#{@paul-color-main-3}"
+
+#= include "paul/_paul-options"
+
+#= include "paul/_theme-options"
+#= include "paul/_theme-options-block"
+
+#= include "_apply"
