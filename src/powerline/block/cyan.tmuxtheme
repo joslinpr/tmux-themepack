@@ -1,3 +1,4 @@
+#################### File: /powerline/block/cyan.tmuxtheme
 #
 # Powerline Cyan Block - Tmux Themepack
 #= include "powerline/_info"
@@ -7,3 +8,4 @@
 # Powerline color options
 #= include "powerline/_colors/cyan"
 #= include "powerline/block/_base"
+#################### End File: /powerline/block/cyan.tmuxtheme

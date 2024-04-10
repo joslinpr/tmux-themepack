@@ -1,3 +1,5 @@
+#################### File: /paul/_colors/magenta.tmuxsh
 set -gq @paul-color-main-1 colour125
 set -gq @paul-color-main-2 colour127
 set -gq @paul-color-main-3 colour129
+#################### End File: /paul/_colors/magenta.tmuxsh

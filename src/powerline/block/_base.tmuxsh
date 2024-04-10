@@ -1,3 +1,4 @@
+#################### File: /powerline/block/_base.tmuxsh
 #= include "powerline/_colors/base"
 
 # Powerline Block Override
@@ -9,3 +10,4 @@ set -gqF @powerline-color-activity-1 "#{@powerline-color-main-3}"
 #= include "powerline/_theme-options-block"
 
 #= include "_apply"
+#################### End File: /powerline/block/_base.tmuxsh

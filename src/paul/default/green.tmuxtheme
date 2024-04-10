@@ -1,9 +1,11 @@
+#################### File: /paul/default/green.tmuxtheme
 #
-# Powerline Green - Tmux Themepack
+# paul Green - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/green"
 #= include "paul/default/_base"
+#################### End File: /paul/default/green.tmuxtheme

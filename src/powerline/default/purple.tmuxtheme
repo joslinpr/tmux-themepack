@@ -1,3 +1,4 @@
+#################### File: /powerline/default/purple.tmuxtheme
 #
 # Powerline Purple - Tmux Themepack
 #= include "powerline/_info"
@@ -7,3 +8,4 @@
 # Powerline color options
 #= include "powerline/_colors/purple"
 #= include "powerline/default/_base"
+#################### End File: /powerline/default/purple.tmuxtheme

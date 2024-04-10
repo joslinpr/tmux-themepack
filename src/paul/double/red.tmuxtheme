@@ -1,9 +1,11 @@
+#################### File: /paul/double/red.tmuxtheme
 #
-# Powerline Double Red - Tmux Themepack
+# paul Double Red - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/red"
 #= include "paul/double/_base"
+#################### End File: /paul/double/red.tmuxtheme

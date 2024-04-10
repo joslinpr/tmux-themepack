@@ -1,3 +1,5 @@
+#################### File: /powerline/_colors/magenta.tmuxsh
 set -gq @powerline-color-main-1 colour125
 set -gq @powerline-color-main-2 colour127
 set -gq @powerline-color-main-3 colour129
+#################### End File: /powerline/_colors/magenta.tmuxsh

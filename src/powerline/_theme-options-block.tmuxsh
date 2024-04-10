@@ -1,4 +1,6 @@
+#################### File: /powerline/_theme-options-block.tmuxsh
 set -gqF @theme-window-status-current-bg "#{@powerline-color-main-1}"
 set -gqF @theme-window-status-current-fg "#{@powerline-color-black-1}"
 set -gqF @theme-window-status-format " #{@themepack-window-status-format} "
 set -gqF @theme-window-status-current-format " #{@themepack-window-status-current-format} "
+#################### End File: /powerline/_theme-options-block.tmuxsh

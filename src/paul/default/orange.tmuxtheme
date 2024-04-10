@@ -1,9 +1,11 @@
+#################### File: /paul/default/orange.tmuxtheme
 #
-# Powerline Orange - Tmux Themepack
+# paul Orange - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/orange"
 #= include "paul/default/_base"
+#################### End File: /paul/default/orange.tmuxtheme

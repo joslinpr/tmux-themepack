@@ -1,3 +1,4 @@
+#################### File: /powerline/double/blue.tmuxtheme
 #
 # Powerline Double Blue - Tmux Themepack
 #= include "powerline/_info"
@@ -7,3 +8,4 @@
 # Powerline color options
 #= include "powerline/_colors/blue"
 #= include "powerline/double/_base"
+#################### End File: /powerline/double/blue.tmuxtheme

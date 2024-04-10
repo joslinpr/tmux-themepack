@@ -1,3 +1,4 @@
+#################### File: /powerline/default/_base.tmuxsh
 #= include "powerline/_colors/base"
 
 #= include "powerline/_powerline-options"
@@ -6,3 +7,4 @@
 #= include "powerline/_theme-options-default"
 
 #= include "_apply"
+#################### End File: /powerline/default/_base.tmuxsh

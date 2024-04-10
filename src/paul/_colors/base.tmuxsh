@@ -1,3 +1,4 @@
+#################### File: /paul/_colors/base.tmuxsh
 set -gq @paul-color-black-1 black
 set -gq @paul-color-grey-1 colour233
 set -gq @paul-color-grey-2 colour235
@@ -5,3 +6,4 @@ set -gq @paul-color-grey-3 colour238
 set -gq @paul-color-grey-4 colour240
 set -gq @paul-color-grey-5 colour243
 set -gq @paul-color-grey-6 colour245
+#################### End File: /paul/_colors/base.tmuxsh

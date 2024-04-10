@@ -1,3 +1,5 @@
+#################### File: /powerline/_colors/green.tmuxsh
 set -gq @powerline-color-main-1 colour100
 set -gq @powerline-color-main-2 colour190
 set -gq @powerline-color-main-3 colour107
+#################### End File: /powerline/_colors/green.tmuxsh

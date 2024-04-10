@@ -1,3 +1,4 @@
+#################### File: /powerline/_themepack-options.tmuxsh
 # Themepack format options
 set -gq @themepack-status-left-area-left-format "#S"
 set -gq @themepack-status-left-area-middle-format "#(whoami)"
@@ -9,3 +10,4 @@ set -gq @themepack-window-status-current-format "#I:#W#F"
 set -gq @themepack-window-status-format "#I:#W#F"
 
 #= include "_themepack-options-affixes"
+#################### End File: /powerline/_themepack-options.tmuxsh

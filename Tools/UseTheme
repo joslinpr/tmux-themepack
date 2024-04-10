@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DEBUG=0
+
+get-tmux-option() {
+  local option value default
+  option="$1"
+  default="$2"
+  value="$(tmux show-option -gqv "$option")"
+
+  if ((DEBUG>0))
+  then
+    printf "option=%s default=%s value=%s\n" "$option" "$default" "$value" >&2
+  fi
+
+  if [ -n "$value" ]; then
+    echo "$value"
+  else
+    echo "$default"
+  fi
+}
+
+main() {
+  local theme
+  theme="$(get-tmux-option "@themepack" "basic")"
+
+  if [ -f "$CURRENT_DIR/${theme}.tmuxtheme" ]; then
+    tmux source-file "$CURRENT_DIR/${theme}.tmuxtheme"
+  else
+    tmux source-file "$CURRENT_DIR/powerline/${theme}.tmuxtheme"
+  fi
+}
+
+ErrMsg(){
+  printf "%b\n" "$@" >&2
+}
+
+################################################################################
+# Main #
+########
+while getopts ":dh" opt; do
+    case ${opt} in
+        d) DEBUG=1 ;;
+        h) Usage; exit 0; ;;
+        \?)
+            Usage;
+            ErrMsg "\nInvalid option: -${OPTARG}\n"
+            exit 1;
+            ;;
+    esac
+done
+shift $((OPTIND-1))
+if ((DEBUG>0))
+then
+    ErrMsg "DEBUG: ${DEBUG}\n"
+fi
+
+main "$@"
+# vim: set ai et nu cin sts=2 sw=2 ts=2 tw=78 filetype=sh :

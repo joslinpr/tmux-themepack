@@ -1,3 +1,4 @@
+#################### File: /powerline/_info.tmuxsh
 # https://github.com/jimeh/tmux-themepack
 #
 # Inspired by vim-powerline: https://github.com/powerline/powerline
@@ -5,3 +6,4 @@
 # Requires terminal to be using a powerline compatible font, find one here:
 # https://github.com/powerline/fonts
 #
+#################### End File: /powerline/_info.tmuxsh

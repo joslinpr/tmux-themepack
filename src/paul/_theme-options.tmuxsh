@@ -1,15 +1,22 @@
+#################### File: /paul/_theme-options.tmuxsh
 # Theme options
 ########################################
 # Status, Message, Clock, Bell    ---------------------------------------------
 ########################################
 #
-# default statusbar colors
+# default status stuff
 set -gqF @theme-status-fg "#{@paul-status-fg}"
 set -gqF @theme-status-bg "#{@paul-status-bg}"
-
 set -gq  @theme-status-interval 1
+set -gqF @theme-mode-bg "#{@paul-color-main-1}"
+set -gqF @theme-mode-fg "#{@paul-color-black-1}"
+set -gq  @theme-status-justify left
+set -gqF @theme-window-status-activity-bg "#{@theme-status-bg}"
+set -gqF @theme-window-status-activity-fg "#{@paul-color-activity-1}"
+set -gq  @theme-window-status-separator " | "
+set -gwF window-status-separator "#{@theme-window-status-separator}"
+
 # right statusbar
-#set -g @theme-status-right " %d %b %Y %H:%M"
 set -gqF @theme-status-right-bg "#{@paul-status-right-bg}"
 set -gqF @theme-status-right-fg "#{@paul-status-right-fg}"
 set -gq  @theme-status-right-length 150
@@ -20,27 +27,17 @@ set -gqF @theme-status-left-fg "#{@paul-status-left-fg}"
 set -gqF @theme-status-left-bg "#{@paul-status-left-bg}"
 set -gq  @theme-status-left-length 40
 set -gqF @theme-status-left "#[fg=#{@paul-status-left-area-left-fg},bg=#{@paul-status-left-area-left-bg},bold] #{@themepack-status-left-area-left-format} #[fg=#{@paul-status-left-area-left-bg},bg=#{@paul-status-left-area-middle-bg},nobold]#[fg=#{@paul-status-left-area-middle-fg},bg=#{@paul-status-left-area-middle-bg}] #{@themepack-status-left-area-middle-format} #[fg=#{@paul-status-left-area-middle-bg},bg=#{@paul-status-left-area-right-bg}]#[fg=#{@paul-status-left-area-right-fg},bg=#{@paul-status-left-area-right-bg}] #{@themepack-status-left-area-right-format} #[fg=#{@paul-status-left-area-right-bg},bg=#{@theme-status-bg},nobold]"
-#set -g @theme-status-left "[#S #W #P] "
 
-set -gqF @theme-mode-bg "#{@paul-color-main-1}"
-set -gqF @theme-mode-fg "#{@paul-color-black-1}"
-set -gq  @theme-status-justify left
-set -gqF @theme-window-status-activity-bg "#{@theme-status-bg}"
-set -gqF @theme-window-status-activity-fg "#{@paul-color-activity-1}"
-set -gq  @theme-window-status-separator ""
 ## message text
 set -gqF @theme-message-fg "#{@paul-color-black-1}"
 set -gqF @theme-message-bg "#{@paul-color-main-1}"
 set -gqF @theme-message-command-fg "#{@paul-color-black-1}"
 set -gqF @theme-message-command-bg "#{@paul-color-main-1}"
+
 ## clock
 set -gqF @theme-clock-mode-colour "#{@paul-color-main-1}"
 set -gq  @theme-clock-mode-style 24
-##
-## bell
-## Set status line style for windows with a bell alert.
-#set -g @theme-window-status-bell-style fg=$theme_color_11,bg=$theme_color_1
-#
+
 #########################################
 ## Panes    ---------------------------------------------------------------------
 #########################################
@@ -55,56 +52,4 @@ set -gqF @theme-pane-active-border-fg "#{@paul-color-main-1}"
 ## pane number display
 set -gqF @theme-display-panes-active-colour "#{@paul-color-grey-6}"
 set -gqF @theme-display-panes-colour "#{@paul-color-grey-1}"
-## Pane format: Title, Window, Pane_id
-##set -g @theme-pane-border-format "#T #W_#D "
-##set -gF @theme-pane-border-format "#{?pane_active,#[reverse],#[fg=$theme_color_15,bg=default]} -#T #W_#D- "
-#set -gF pane-border-format "#{?pane_active,#[reverse],#[fg=$theme_color_15,bg=default]} -#T #W_#D- "
-#
-#########################################
-## Windows    -------------------------------------------------------------------
-#########################################
-##
-## Set window modes style.
-#set -g @theme-mode-bg $theme_color_7
-#set -g @theme-mode-fg $theme_color_12
-## Set status line style for windows with an activity alert.
-#set -g @theme-window-status-activity-fg $theme_color_10
-#set -g @theme-window-status-activity-bg $theme_color_1
-## Set status line style for the currently active window.
-#set -gqF @theme-window-status-current-format "#[fg=$theme_color_0,bg=$theme_color_9] #I:#W# #[fg=$theme_color_9,bg=$theme_color_0]"
-#
-#set -g @theme-window-status-current-format "#I:#W#F"
-#set -g @theme-window-status-format "#I:#W#F"
-#set -g @theme-window-status-current-fg $theme_color_1
-#set -g @theme-window-status-current-bg $theme_color_9
-## Set status line style for the last active window.
-##	set-option -g window-status-last-style underscore
-#set -g @theme-window-status-separator " | "
-#
-#
-#
-## Apply @theme-* options to Tmux
-#set -gF  display-panes-active-colour "#{@theme-display-panes-active-colour}"
-#set -gF  display-panes-colour "#{@theme-display-panes-colour}"
-#set -gF  message-command-style "fg=#{@theme-message-command-fg},bg=#{@theme-message-command-bg}"
-#set -gF  message-style "fg=#{@theme-message-fg},bg=#{@theme-message-bg}"
-#set -gF  status-interval "#{@theme-status-interval}"
-#set -gF  status-justify "#{@theme-status-justify}"
-#set -gF  status-left "#{@theme-status-left}"
-#set -gF  status-left-length "#{@theme-status-left-length}"
-#set -gF  status-left-style "fg=#{@theme-status-left-fg},bg=#{@theme-status-left-bg}"
-#set -gF  status-right "#{@theme-status-right}"
-#set -gF  status-right-length "#{@theme-status-right-length}"
-#set -gF  status-right-style "fg=#{@theme-status-right-fg},bg=#{@theme-status-right-bg}"
-#set -gF  status-style "fg=#{@theme-status-fg},bg=#{@theme-status-bg}"
-#set -gwF clock-mode-colour "#{@theme-clock-mode-colour}"
-#set -gwF clock-mode-style "#{@theme-clock-mode-style}"
-#set -gwF mode-style "fg=#{@theme-mode-fg},bg=#{@theme-mode-bg}"
-#set -gwF pane-active-border-style "fg=#{@theme-pane-active-border-fg},bg=#{@theme-pane-active-border-bg}"
-#set -gwF pane-border-style "fg=#{@theme-pane-border-fg},bg=#{@theme-pane-border-bg}"
-#set -gwF window-status-activity-style "fg=#{@theme-window-status-activity-fg},bg=#{@theme-window-status-activity-bg}"
-#set -gwF window-status-current-format "#{@theme-window-status-current-format}"
-#set -gwF window-status-current-style "fg=#{@theme-window-status-current-fg},bg=#{@theme-window-status-current-bg}"
-#set -gwF window-status-format "#{@theme-window-status-format}"
-#set -gwF window-status-separator "#{@theme-window-status-separator}"
-##  vim: set ai et nu cin sts=4 sw=4 ts=4 tw=0 filetype=tmux :
+#################### End File: /paul/_theme-options.tmuxsh

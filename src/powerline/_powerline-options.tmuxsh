@@ -1,3 +1,4 @@
+#################### File: /powerline/_powerline-options.tmuxsh
 # Powerline options
 set -gqF @powerline-color-activity-1 "#{@powerline-color-grey-6}"
 set -gqF @powerline-status-bg "#{@powerline-color-grey-1}"
@@ -18,3 +19,4 @@ set -gqF @powerline-status-right-area-right-bg "#{@powerline-color-grey-6}"
 set -gqF @powerline-status-right-area-right-fg "#{@powerline-status-bg}"
 set -gqF @powerline-status-right-bg "#{@powerline-color-grey-1}"
 set -gqF @powerline-status-right-fg "#{@powerline-color-grey-5}"
+#################### End File: /powerline/_powerline-options.tmuxsh

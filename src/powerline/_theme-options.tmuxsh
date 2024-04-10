@@ -1,3 +1,4 @@
+#################### File: /powerline/_theme-options.tmuxsh
 # Theme options
 set -gqF @theme-clock-mode-colour "#{@powerline-color-main-1}"
 set -gq  @theme-clock-mode-style 24
@@ -28,3 +29,4 @@ set -gq  @theme-status-right-length 150
 set -gqF @theme-window-status-activity-bg "#{@theme-status-bg}"
 set -gqF @theme-window-status-activity-fg "#{@powerline-color-activity-1}"
 set -gq  @theme-window-status-separator ""
+#################### End File: /powerline/_theme-options.tmuxsh

@@ -1,0 +1,11 @@
+#################### File: /paul/double/gray.tmuxtheme
+#
+# paul Gray - Tmux Themepack
+#= include "paul/_info"
+
+#= include "paul/_themepack-options"
+
+# paul color options
+#= include "paul/_colors/gray"
+#= include "paul/default/_base"
+#################### End File: /paul/double/gray.tmuxtheme

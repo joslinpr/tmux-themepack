@@ -1,3 +1,4 @@
+#################### File: /powerline/double/magenta.tmuxtheme
 #
 # Powerline Double Magenta - Tmux Themepack
 #= include "powerline/_info"
@@ -7,3 +8,4 @@
 # Powerline color options
 #= include "powerline/_colors/magenta"
 #= include "powerline/double/_base"
+#################### End File: /powerline/double/magenta.tmuxtheme

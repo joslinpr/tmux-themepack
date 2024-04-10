@@ -1,9 +1,11 @@
+#################### File: /paul/block/magenta.tmuxtheme
 #
-# Powerline Magenta Block - Tmux Themepack
+# paul Magenta Block - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/magenta"
 #= include "paul/block/_base"
+#################### End File: /paul/block/magenta.tmuxtheme

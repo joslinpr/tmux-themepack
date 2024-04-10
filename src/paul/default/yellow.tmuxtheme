@@ -1,9 +1,11 @@
+#################### File: /paul/default/yellow.tmuxtheme
 #
-# Powerline Yellow - Tmux Themepack
+# paul Yellow - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/yellow"
 #= include "paul/default/_base"
+#################### End File: /paul/default/yellow.tmuxtheme

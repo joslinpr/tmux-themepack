@@ -1,3 +1,4 @@
+#################### File: /powerline/double/_base.tmuxsh
 #= include "powerline/_colors/base"
 
 # Powerline Double Override
@@ -9,3 +10,4 @@ set -gqF @powerline-status-right-area-right-bg "#{@powerline-color-main-1}"
 #= include "powerline/_theme-options-default"
 
 #= include "_apply"
+#################### End File: /powerline/double/_base.tmuxsh

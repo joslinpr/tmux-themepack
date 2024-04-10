@@ -1,9 +1,11 @@
+#################### File: /paul/double/blue.tmuxtheme
 #
-# Powerline Double Blue - Tmux Themepack
+# paul Double Blue - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/blue"
 #= include "paul/double/_base"
+#################### End File: /paul/double/blue.tmuxtheme

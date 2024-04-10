@@ -1,3 +1,5 @@
+#################### File: /paul/_colors/purple.tmuxsh
 set -gq @paul-color-main-1 colour90
 set -gq @paul-color-main-2 colour129
 set -gq @paul-color-main-3 colour141
+#################### End File: /paul/_colors/purple.tmuxsh

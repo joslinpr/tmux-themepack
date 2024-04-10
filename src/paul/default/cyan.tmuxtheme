@@ -1,9 +1,11 @@
+#################### File: /paul/default/cyan.tmuxtheme
 #
-# Powerline Cyan - Tmux Themepack
+# paul Cyan - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/cyan"
 #= include "paul/default/_base"
+#################### End File: /paul/default/cyan.tmuxtheme

@@ -1,9 +1,11 @@
+#################### File: /paul/block/gray.tmuxtheme
 #
-# Powerline Gray Block - Tmux Themepack
+# paul Gray Block - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# paul color options
 #= include "paul/_colors/gray"
 #= include "paul/block/_base"
+#################### End File: /paul/block/gray.tmuxtheme
