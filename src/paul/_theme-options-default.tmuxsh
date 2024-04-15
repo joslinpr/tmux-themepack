@@ -1,5 +1,7 @@
-set -gqF @theme-window-status-current-bg "#{@paul-color-black-1}"
-set -gqF @theme-window-status-current-fg "#{@paul-color-main-2}"
-set -gqF @theme-window-status-format "  #{@themepack-window-status-format}  "
-set -gqF @theme-window-status-current-format "#[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg}]#[fg=#{@theme-window-status-current-fg},nobold] #{@themepack-window-status-current-format} #[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg},nobold]"
+# Start _theme-options-default.tmuxsh
+set -gF @theme-window-status-current-bg "#{@paul-color-black-1}"
+set -gF @theme-window-status-current-fg "#{@paul-color-main-2}"
+set -gF @theme-window-status-format "  #{@themepack-window-status-format}  "
+set -gF @theme-window-status-current-format "#[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg}]#[fg=#{@theme-window-status-current-fg},nobold] #{@themepack-window-status-current-format} #[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg},nobold]"
  
+# End  _theme-options-default.tmuxsh

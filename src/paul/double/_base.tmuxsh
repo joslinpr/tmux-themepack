@@ -1,11 +1,13 @@
+# Start _base.tmuxsh
 #= include "paul/_colors/base"
-
-# Powerline Double Override
-set -gqF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
 
 #= include "paul/_paul-options"
 
 #= include "paul/_theme-options"
 #= include "paul/_theme-options-default"
 
+# Powerline Double Override
+set -gF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
+
 #= include "_apply"
+# End  _base.tmuxsh

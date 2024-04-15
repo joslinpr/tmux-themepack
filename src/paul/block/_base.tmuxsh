@@ -1,7 +1,8 @@
+# Start _base.tmuxsh
 #= include "paul/_colors/base"
 
 # Powerline Block Override
-set -gqF @paul-color-activity-1 "#{@paul-color-main-3}"
+set -gF @paul-color-activity-1 "#{@paul-color-main-3}"
 
 #= include "paul/_paul-options"
 
@@ -9,3 +10,4 @@ set -gqF @paul-color-activity-1 "#{@paul-color-main-3}"
 #= include "paul/_theme-options-block"
 
 #= include "_apply"
+# End  _base.tmuxsh
