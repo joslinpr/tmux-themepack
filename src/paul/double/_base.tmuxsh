@@ -3,11 +3,11 @@
 
 #= include "paul/_paul-options"
 
-#= include "paul/_theme-options"
-#= include "paul/_theme-options-default"
-
 # Powerline Double Override
 set -gF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
+
+#= include "paul/_theme-options"
+#= include "paul/_theme-options-default"
 
 #= include "_apply"
 # End  _base.tmuxsh

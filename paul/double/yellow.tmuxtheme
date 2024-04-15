@@ -86,6 +86,9 @@ set -gF @paul-status-right-bg "#{@paul-color-grey-1}"
 set -gF @paul-status-right-fg "#{@paul-color-grey-5}"
 # End  _paul-options.tmuxsh
 
+# Powerline Double Override
+set -gF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
+
 # Start _theme-options.tmuxsh
 # Theme options
 ########################################
@@ -152,9 +155,6 @@ set -gF @theme-window-status-format "  #{@themepack-window-status-format}  "
 set -gF @theme-window-status-current-format "#[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg}]#[fg=#{@theme-window-status-current-fg},nobold] #{@themepack-window-status-current-format} #[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg},nobold]"
  
 # End  _theme-options-default.tmuxsh
-
-# Powerline Double Override
-set -gF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
 
 # Customizable prefixes and suffixes for @theme-* format options
 set -gq @theme-status-left-prefix ""
