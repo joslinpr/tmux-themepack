@@ -6,5 +6,5 @@
 #= include "paul/_theme-options"
 #= include "paul/_theme-options-default"
 
-#= include "_apply"
+#= include "paul/_apply"
 # End  _base.tmuxsh

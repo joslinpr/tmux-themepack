@@ -1,9 +1,9 @@
 #
-# Powerline Double Cyan - Tmux Themepack
+# Paul Double Cyan - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# Paul color options
 #= include "paul/_colors/cyan"
 #= include "paul/double/_base"

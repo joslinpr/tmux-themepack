@@ -1,9 +1,9 @@
 #
-# Powerline Double Blue - Tmux Themepack
+# Paul Double Blue - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# Paul color options
 #= include "paul/_colors/blue"
 #= include "paul/double/_base"

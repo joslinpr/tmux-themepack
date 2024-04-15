@@ -1,9 +1,9 @@
 #
-# Powerline Red Block - Tmux Themepack
+# Paul Red Block - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# Paul color options
 #= include "paul/_colors/red"
 #= include "paul/block/_base"

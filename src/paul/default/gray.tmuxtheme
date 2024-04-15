@@ -1,9 +1,9 @@
 #
-# Powerline Gray - Tmux Themepack
+# Paul Gray - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# Paul color options
 #= include "paul/_colors/gray"
 #= include "paul/default/_base"

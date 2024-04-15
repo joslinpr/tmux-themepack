@@ -1,9 +1,9 @@
 #
-# Powerline Yellow Block - Tmux Themepack
+# Paul Yellow Block - Tmux Themepack
 #= include "paul/_info"
 
 #= include "paul/_themepack-options"
 
-# Powerline color options
+# Paul color options
 #= include "paul/_colors/yellow"
 #= include "paul/block/_base"
