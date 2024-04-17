@@ -1,8 +1,5 @@
 <<<<<<< HEAD
 #################### File: /paul/default/_base.tmuxsh
-=======
-# Start _base.tmuxsh
->>>>>>> 77fe65f652166439ce7e75fb5df2e33d9a583e5f
 #= include "paul/_colors/base"
 
 #= include "paul/_paul-options"
