@@ -1,17 +1,10 @@
-<<<<<<< HEAD
 #################### File: /paul/_themepack-options.tmuxsh
 # Themepack format options
 set -gq @themepack-status-left-area-left-format "#H"          # Host
-set -gq @themepack-status-left-area-middle-format "#S"          # Session
-set -gq @themepack-status-left-area-right-format ""           # Index and Pane
-#set -gq @themepack-status-left-area-middle-format "#W"        # Window
-#set -gq @themepack-status-left-area-right-format "#I:#P"      # Index and Pane
-#set -gq @themepack-status-right-area-left-format "#h"         # Short Hostname
-set -gq @themepack-status-right-area-left-format ""            # None
-set -gq @themepack-status-right-area-middle-format "%H:%M"    # Hours : Minutes
+set -gq @themepack-status-left-area-right-format "#S"          # Session
+set -gq @themepack-status-right-area-left-format "%H:%M"    # Hours : Minutes
 set -gq @themepack-status-right-area-right-format "%d %b %Y"  # day Mon Year
 set -gq @themepack-window-status-current-format "#I:#W#F"     # Index Window Flags
 set -gq @themepack-window-status-format "#I:#W#F"             # Index Window Flags
 
-#= include "_themepack-options-affixes"
 #################### End File: /paul/_themepack-options.tmuxsh

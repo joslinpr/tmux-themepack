@@ -18,11 +18,14 @@ get-tmux-option() {
 main() {
   local theme
   theme="$(get-tmux-option "@themepack" "basic")"
+  # Ensure theme ends in tmuxtheme
+  theme="${theme/.tmuxtheme/}.tmuxtheme"
 
-  if [ -f "$CURRENT_DIR/${theme}.tmuxtheme" ]; then
-    tmux source-file "$CURRENT_DIR/${theme}.tmuxtheme"
+  if [ -f "$CURRENT_DIR/${theme}" ]; then
+    tmux source-file "$CURRENT_DIR/${theme}"
   else
-    tmux source-file "$CURRENT_DIR/powerline/${theme}.tmuxtheme"
+    printf "Cannot find theme %s.\n" "${theme}"
+    exit 1
   fi
 }
 
