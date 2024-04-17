@@ -1,11 +1,16 @@
-BUILDER := bin/build-theme
-THEME_SRC := $(shell find src -name '*.tmuxtheme')
-INCLUDES := $(shell find src -name '*.tmuxsh')
-THEMES := $(patsubst src/%,%,$(THEME_SRC))
-TESTS := $(addsuffix .test,$(THEMES))
+BUILDER    := bin/build-theme
+THEME_SRC  := $(shell find src -name '*.tmuxtheme')
+INCLUDES   := $(shell find src -name '*.tmuxsh')
+THEMES     := $(patsubst src/%,%,$(THEME_SRC))
+TESTS      := $(addsuffix .test,$(THEMES))
+INSTALLDIR := /home/pjoslin/.tmux/plugins/tmux-themepack
 
 .PHONY: build
 build: $(THEMES)
+
+.PHONY: install
+install: $(THEMES)
+	rsync -avc ./ $(INSTALLDIR)
 
 .PHONY: clean
 clean:
