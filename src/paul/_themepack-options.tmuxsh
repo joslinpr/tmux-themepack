@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #################### File: /paul/_themepack-options.tmuxsh
 # Themepack format options
 set -gq @themepack-status-left-area-left-format "#H"          # Host
