@@ -4,13 +4,15 @@ INCLUDES   := $(shell find src -name '*.tmuxsh')
 THEMES     := $(patsubst src/%,%,$(THEME_SRC))
 TESTS      := $(addsuffix .test,$(THEMES))
 INSTALLDIR := /home/pjoslin/.tmux/plugins/tmux-themepack
+RSYNC := $(shell command -v rsync)
+RSYNCARGS := -avc --cvs-exclude
 
 .PHONY: build
 build: $(THEMES)
 
 .PHONY: install
 install: $(THEMES)
-	rsync -avc ./ $(INSTALLDIR)
+	$(RSYNC)  $(RSYNCARGS) ./ $(INSTALLDIR)
 
 .PHONY: clean
 clean:
