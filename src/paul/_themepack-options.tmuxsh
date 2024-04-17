@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #################### File: /paul/_themepack-options.tmuxsh
 # Themepack format options
 set -gq @themepack-status-left-area-left-format "#H"          # Host
@@ -8,5 +7,4 @@ set -gq @themepack-status-right-area-right-format "%d %b %Y"  # day Mon Year
 set -gq @themepack-window-status-current-format "#I:#W#F"     # Index Window Flags
 set -gq @themepack-window-status-format "#I:#W#F"             # Index Window Flags
 
-#= include "_themepack-options-affixes"
 #################### End File: /paul/_themepack-options.tmuxsh
