@@ -6,4 +6,16 @@
 # Requires terminal to be using a powerline compatible font, find one here:
 # https://github.com/powerline/fonts
 #
-#################### End File: /paul/_info.tmuxsh
+# Order of Inclusion:
+# /paul/block/cyan.tmuxtheme
+#   |-> /paul/_info.tmuxsh
+#   |-> /paul/_themepack-options.tmuxsh
+#   |-> /paul/_colors/cyan.tmuxsh
+#   |-> /paul/block/_base.tmuxsh
+#     |-> /paul/_colors/base.tmuxsh
+#     |-> /paul/_paul-options.tmuxsh
+#     |-> /paul/_theme-options.tmuxsh
+#     |-> /paul/_theme-options-block.tmuxsh
+#     |-> /paul/_apply.tmuxsh
+#   End /paul/block/_base.tmuxsh
+# End /paul/_info.tmuxsh

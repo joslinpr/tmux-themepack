@@ -20,8 +20,13 @@ set -gwF window-status-separator "#{@theme-window-status-separator}"
 set -gqF @theme-status-right-bg "#{@paul-status-right-bg}"
 set -gqF @theme-status-right-fg "#{@paul-status-right-fg}"
 set -gq  @theme-status-right-length 150
-set -gqF @theme-status-right " #[fg=#{@paul-status-right-area-left-bg},bg=#{@theme-status-bg}] #[fg=#{@paul-status-right-area-left-fg},bg=#{@paul-status-right-area-left-bg}] #{@themepack-status-right-area-left-format}#[fg=#{@paul-status-right-area-right-bg},bg=#{@paul-status-right-area-left-bg}] #[fg=#{@paul-status-right-area-right-fg},bg=#{@paul-status-right-area-right-bg},bold]#{@themepack-status-right-area-right-format} "
+#set -gqF @theme-status-right "#[fg=#{@paul-status-right-area-left-bg},bg=#{@theme-status-bg}] #[fg=#{@paul-status-right-area-remote-fg},bg=#{@theme-status-bg}] #{@themepack-status-right-area-remote-format} #[fg=#{@paul-status-right-area-right-bg},bg=#{@paul-status-right-area-remote-bg}] #[fg=#{@paul-status-right-area-left-bg},bg=#{@theme-status-bg}]#[reverse] #{@themepack-status-right-area-left-format}#[normal]#[fg=#{@paul-status-right-area-right-bg},bg=#{@paul-status-right-area-left-bg}]#[fg=#{@paul-status-right-area-right-fg},bg=#{@paul-status-right-area-right-bg},bold]#{@themepack-status-right-area-right-format} "
 
+# set -gqF @theme-status-right " 1 #[fg=#{@paul-status-right-area-remote-fg},bg=#{@theme-status-bg}]#{@themepack-status-right-area-remote-format} 3 #{@themepack-status-right-area-remote-format} #[fg=#{@paul-status-right-area-left-bg},bg=#{@theme-status-bg}] #[fg=#{@paul-status-right-area-left-fg},bg=#{@paul-status-right-area-left-bg},bold] #{@themepack-status-right-area-left-format} #[fg=#{@paul-status-right-area-right-bg},bg=#{@paul-status-right-area-left-bg},bold]#[fg=#{@paul-status-right-area-right-fg},bg=#{@paul-status-right-area-right-bg},bold]#{@themepack-status-right-area-right-format} "
+
+set -gqF @theme-status-right "#[fg=#{@paul-status-right-area-remote-fg},bg=#{@theme-status-bg}]#{@themepack-status-right-area-remote-format}#[fg=#{@paul-status-right-area-left-bg},bg=#{@theme-status-bg}]#[fg=#{@paul-status-right-area-left-fg},bg=#{@paul-status-right-area-left-bg},bold] #{@themepack-status-right-area-left-format} #[fg=#{@paul-status-right-area-right-bg},bg=#{@paul-status-right-area-left-bg},bold]#[fg=#{@paul-status-right-area-right-fg},bg=#{@paul-status-right-area-right-bg},bold]#{@themepack-status-right-area-right-format} "
+
+#
 # left statusbar
 set -gqF @theme-status-left-fg "#{@paul-status-left-fg}"
 set -gqF @theme-status-left-bg "#{@paul-status-left-bg}"
