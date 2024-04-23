@@ -46,16 +46,5 @@ set -gq  @theme-clock-mode-style 24
 #########################################
 ## Panes    ---------------------------------------------------------------------
 #########################################
-##
-## Pane border style for panes aside from the active pane.
-set -gq  @theme-pane-border-bg default
-set -gqF @theme-pane-border-fg "#{@paul-color-grey-3}"
-## Pane border style for the currently active pane.
-set -gq  @theme-pane-active-border-bg default
-set -gqF @theme-pane-active-border-fg "#{@paul-color-main-1}"
-## Pane style.
-## pane number display
-set -gqF @theme-display-panes-active-colour "#{@paul-color-grey-6}"
-set -gqF @theme-display-panes-colour "#{@paul-color-grey-1}"
-#################### End File: /paul/_theme-options.tmuxsh
-#  vim: set ai et nonu cin sts=4 sw=4 ts=4 tw=0 filetype=tmux :
+#= include "paul/_pane"
+#  vim: set ai et nu cin sts=4 sw=4 ts=4 tw=0 filetype=tmux :

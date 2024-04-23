@@ -1,0 +1,23 @@
+#################### File: /paul/_pane.tmuxsh
+# This file allows themes to change the pane decoration
+# You can override it in _theme-options-*.tmuxsh
+#
+# Set The Type Of Characters Used For Drawing Pane Borders.	type May Be One Of:
+# single | double | heavy | simple | number
+set-option -g pane-border-lines single
+
+# Set The Pane Border Style For Panes Aside From The Active Pane.
+set-option -g pane-border-style \
+"align=right,bg=#{@paul-status-left-area-left-fg},fg=#{@paul-status-left-area-left-bg},dim"
+
+# Set The Pane Border Style For The Active Pane.
+set-option -g pane-active-border-style  \
+"align=right,bg=#{@paul-status-left-area-left-fg},fg=#{@paul-status-left-area-left-bg}"
+
+# Set The Text Shown In Pane Border Status Lines.
+set-option -g pane-border-format " #D #W #{pane_title} "
+#
+# End /paul/_info.tmuxsh
+## pane number display
+set -gqF @theme-display-panes-active-colour "#{@paul-color-grey-6}"
+set -gqF @theme-display-panes-colour "#{@paul-color-grey-1}"

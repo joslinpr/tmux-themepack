@@ -5,7 +5,7 @@ THEMES     := $(patsubst src/%,%,$(THEME_SRC))
 TESTS      := $(addsuffix .test,$(THEMES))
 INSTALLDIR := $(HOME)/.tmux/plugins/tmux-themepack
 RSYNC := $(shell command -v rsync)
-RSYNCARGS := -ac --cvs-exclude
+RSYNCARGS := -ac --cvs-exclude --info=STATS,PROGRESS2
 
 .PHONY: build
 build: $(THEMES)
