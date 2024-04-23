@@ -15,12 +15,13 @@ build: $(THEMES)
 install: $(THEMES)
 	$(RSYNC) $(RSYNCARGS) ./ $(INSTALLDIR)
 	$(MINIFY) $(INSTALLDIR)
+	find $(INSTALLDIR) -name "*.bak" -not -path "src/*" -exec rm {} +
 
 .PHONY: clean
 clean:
-	@echo $(shell find * -name "*.tmuxtheme" -not -path "src/*" -print -exec rm {} +  )
-	@echo $(shell find * -name "*.bak" -not -path "src/*" -print -exec rm {} +  )
-	@echo $(shell find $(INSTALLDIR) -name "*.bak" -not -path "src/*" -print -exec rm {} +  )
+	find * -name "*.tmuxtheme" -not -path "src/*" -print -exec rm {} +
+	find * -name "*.bak" -not -path "src/*" -print -exec rm {} +
+	find $(INSTALLDIR) -name "*.bak" -not -path "src/*" -print -exec rm {} +
 
 .PHONY: lint
 lint:
