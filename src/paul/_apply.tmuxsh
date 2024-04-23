@@ -1,13 +1,11 @@
 #################### File: /paul/_apply.tmuxsh
 # Customizable prefixes and suffixes for @theme-* format options
-set -gqF @theme-status-left "#{@theme-status-left}"
-set -gqF @theme-status-right "#{@theme-status-right}"
-set -gqF @theme-window-status-current-format "#{@theme-window-status-current-format}"
-set -gqF @theme-window-status-format "#{@theme-window-status-format}"
+set -gF @theme-status-left "#{@theme-status-left}"
+set -gF @theme-status-right "#{@theme-status-right}"
+set -gF @theme-window-status-current-format "#{@theme-window-status-current-format}"
+set -gF @theme-window-status-format "#{@theme-window-status-format}"
 
 # Apply @theme-* options to Tmux
-set -gF  display-panes-active-colour "#{@theme-display-panes-active-colour}"
-set -gF  display-panes-colour "#{@theme-display-panes-colour}"
 set -gF  message-command-style "fg=#{@theme-message-command-fg},bg=#{@theme-message-command-bg}"
 set -gF  message-style "fg=#{@theme-message-fg},bg=#{@theme-message-bg}"
 set -gF  status-interval "#{@theme-status-interval}"
@@ -22,8 +20,6 @@ set -gF  status-style "fg=#{@theme-status-fg},bg=#{@theme-status-bg}"
 set -gwF clock-mode-colour "#{@theme-clock-mode-colour}"
 set -gwF clock-mode-style "#{@theme-clock-mode-style}"
 set -gwF mode-style "fg=#{@theme-mode-fg},bg=#{@theme-mode-bg}"
-set -gwF pane-active-border-style "fg=#{@theme-pane-active-border-fg},bg=#{@theme-pane-active-border-bg}"
-set -gwF pane-border-style "fg=#{@theme-pane-border-fg},bg=#{@theme-pane-border-bg}"
 set -gwF window-status-activity-style "fg=#{@theme-window-status-activity-fg},bg=#{@theme-window-status-activity-bg}"
 set -gwF window-status-current-format "#{@theme-window-status-current-format}"
 set -gwF window-status-current-style "fg=#{@theme-window-status-current-fg},bg=#{@theme-window-status-current-bg}"

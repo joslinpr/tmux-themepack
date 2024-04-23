@@ -1,9 +1,9 @@
+#################### File: /paul/_theme-options-block.tmuxsh
 # Set The Type Of Characters Used For Drawing Pane Borders.
 # May Be One Of:  single | double | heavy | simple | number
 %if #{==:#{version},3.2}
 set-option -g pane-border-lines single
 %endif
-#################### File: /paul/_theme-options-block.tmuxsh
 
 set -gqF @theme-window-status-current-bg "#{@paul-color-main-1}"
 set -gqF @theme-window-status-current-fg "#{@paul-color-black-1}"
