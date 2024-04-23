@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+function Minify(){
+  local Theme="$1"
+  if [ -s "$Theme" -a -f "$Theme" ]
+  then
+    mv "$Theme" "$Theme".bak
+    sed -e '/^$/d;' -e '/vim:/d' "$Theme".bak > "$Theme"
+    printf  "\t%s\n" "$Theme" >&2
+  fi
+}
+if [ -z "$1" ]
+then
+    printf "Usage: %s DIR [ DIR ]\n" "$(basename 0)" >&2
+    printf "Clean up tmux theme files in DIR and subdirectories.\n" >&2
+    exit 1
+else
+    for i in $@
+    do
+        if [ -d $i ]
+        then
+          printf "%s\n" "$i" >&2
+          FILES=$(find $i -iname "*.tmuxtheme" -print )
+          for FILE in $FILES
+          do
+            Minify $FILE
+            printf "\t%s\n" "$FILE"
+          done
+        else
+          printf "%s: Not a directory.\n" >&2
+        fi
+    done
+fi
+
+# vim: set ai et nu cin sts=2 sw=2 ts=2 tw=78 filetype=sh :
