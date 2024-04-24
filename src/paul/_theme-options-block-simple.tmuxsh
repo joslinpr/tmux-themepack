@@ -18,8 +18,8 @@ set -gF @theme-status-right "#[fg=#{@paul-status-right-area-remote-fg},bg=#{@the
 set -gF @theme-window-status-current-format "#[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg}]#[fg=#{@theme-window-status-current-fg},nobold] #{@themepack-window-status-current-format} #[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg},nobold]"
 
 # Override Separator
-set -g  @theme-window-status-separator " | "
-set -gwF @theme-window-status-separator "#[fg=#{@theme-window-status-current-bg}]#{@theme-window-status-separator}"
+set -gu  @theme-window-status-separator " | "
+set -gwF @theme-window-status-separator "#[fg=#{@theme-window-status-current-bg},dim] | "
 
 #################### End File: /paul/_theme-options-block-simple.tmuxsh
 #  vim: set noai noet nonu cin sts=0 sw=4 ts=4 tw=0 filetype=tmux :

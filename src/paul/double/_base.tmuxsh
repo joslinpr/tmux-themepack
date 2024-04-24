@@ -7,6 +7,6 @@
 set -gqF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
 
 #= include "paul/_theme-options"
-#= include "paul/_theme-options-default"
+#= include "paul/_theme-options-double"
 #= include "_apply"
 #################### End File: /paul/double/_base.tmuxsh
