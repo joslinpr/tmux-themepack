@@ -8,14 +8,20 @@ INSTALLDIR := $(HOME)/.tmux/plugins/tmux-themepack
 RSYNC      := $(shell command -v rsync)
 RSYNCARGS  := -ac --cvs-exclude --info=STATS,PROGRESS2
 
+# 10 jobs in parallel
+MAKEFLAGS += -j10
+
 .PHONY: build
 build: $(THEMES)
 
 .PHONY: install
 install: $(THEMES)
-	$(RSYNC) $(RSYNCARGS) ./ $(INSTALLDIR)
-	$(MINIFY) $(INSTALLDIR)
-	find $(INSTALLDIR) -name "*.bak" -not -path "src/*" -exec rm {} +
+	@echo Rsyncing
+	@$(RSYNC) $(RSYNCARGS) ./ $(INSTALLDIR)
+	@echo Minify installed files
+	@$(MINIFY)  $(INSTALLDIR)
+	@echo Cleanup .bak files
+	@find $(INSTALLDIR) -name "*.bak" -not -path "src/*" -exec rm {} +
 
 .PHONY: clean
 clean:
@@ -43,7 +49,10 @@ testmake :
 	@printf "INCLUDES=$(INCLUDES)\n\n"
 	@printf "THEMES=$(THEMES)\n\n"
 
+.SILENT: $(THEMES)
 $(THEMES): %.tmuxtheme: src/%.tmuxtheme $(INCLUDES)
 	$(BUILDER) "src/$@" "$@"
 
 $(TESTS): %.test: src/%.test
+
+#  vim: set ai et nu cin sts=0 sw=8 ts=8 tw=78 filetype=make :

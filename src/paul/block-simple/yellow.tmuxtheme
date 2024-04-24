@@ -1,0 +1,11 @@
+#################### File: /paul/block/yellow.tmuxtheme
+#
+# paul Yellow Block - Tmux Themepack
+#= include "paul/_info"
+
+#= include "paul/_themepack-options"
+
+# paul color options
+#= include "paul/_colors/yellow"
+#= include "paul/block-simple/_base"
+#################### End File: /paul/block/yellow.tmuxtheme

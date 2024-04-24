@@ -1,0 +1,11 @@
+#################### File: /paul/block/magenta.tmuxtheme
+#
+# paul Magenta Block - Tmux Themepack
+#= include "paul/_info"
+
+#= include "paul/_themepack-options"
+
+# paul color options
+#= include "paul/_colors/magenta"
+#= include "paul/block-simple/_base"
+#################### End File: /paul/block/magenta.tmuxtheme

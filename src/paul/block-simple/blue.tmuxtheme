@@ -1,0 +1,11 @@
+#################### File: /paul/block/blue.tmuxtheme
+#
+# Paul Blue Block - Tmux Themepack
+#= include "paul/_info"
+
+#= include "paul/_themepack-options"
+
+# Paul color options
+#= include "paul/_colors/blue"
+#= include "paul/block-simple/_base"
+#################### End File: /paul/block/blue.tmuxtheme

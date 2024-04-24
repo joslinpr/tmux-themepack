@@ -1,0 +1,11 @@
+#################### File: /paul/block/purple.tmuxtheme
+#
+# paul Purple Block - Tmux Themepack
+#= include "paul/_info"
+
+#= include "paul/_themepack-options"
+
+# paul color options
+#= include "paul/_colors/purple"
+#= include "paul/block-simple/_base"
+#################### End File: /paul/block/purple.tmuxtheme
