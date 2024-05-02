@@ -48,4 +48,57 @@ __Reset @theme-window-status-activity-bg @theme-window-status-activity-fg \
  @theme-window-status-current-format @theme-window-status-format \
  @theme-window-status-separator
 
+
+__Reset activity-action aggressive-resize allow-rename alternate-screen
+__Reset assume-paste-time automatic-rename automatic-rename-format
+__Reset base-index bell-action clock-mode-colour clock-mode-style
+__Reset copy-mode-current-match-style copy-mode-mark-style
+__Reset copy-mode-match-style default-command default-shell default-size
+__Reset destroy-unattached detach-on-destroy display-panes-active-colour
+__Reset display-panes-colour display-panes-time display-time history-limit
+__Reset key-table lock-after-time lock-command main-pane-height
+__Reset main-pane-width message-command-style message-style mode-keys
+__Reset mode-style monitor-activity monitor-bell monitor-silence mouse
+__Reset other-pane-height other-pane-width pane-active-border-style
+__Reset pane-base-index pane-border-format pane-border-lines pane-border-status
+__Reset pane-border-style @paul-color-activity-1 @paul-color-black-1
+__Reset @paul-color-grey-1 @paul-color-grey-2 @paul-color-grey-3
+__Reset @paul-color-grey-4 @paul-color-grey-5 @paul-color-grey-6
+__Reset @paul-color-main-1 @paul-color-main-2 @paul-color-main-3
+__Reset @paul-status-bg @paul-status-fg @paul-status-left-area-left-bg
+__Reset @paul-status-left-area-left-fg @paul-status-left-area-right-bg
+__Reset @paul-status-left-area-right-fg @paul-status-left-bg @paul-status-left-fg
+__Reset @paul-status-right-area-left-bg @paul-status-right-area-left-fg
+__Reset @paul-status-right-area-remote-bg @paul-status-right-area-remote-fg
+__Reset @paul-status-right-area-right-bg @paul-status-right-area-right-fg
+__Reset @paul-status-right-bg @paul-status-right-fg @plugin
+__Reset prefix prefix2 remain-on-exit renumber-windows repeat-time
+__Reset @resurrect-restore-script-path @resurrect-save-script-path
+__Reset @resurrect-strategy-irb @resurrect-strategy-mosh-client set-titles
+__Reset set-titles-string silence-action status status-bg status-fg
+__Reset status-keys status-left status-left-length status-left-style
+__Reset status-position status-right status-right-length status-right-style
+__Reset status-style synchronize-panes @theme-clock-mode-colour
+__Reset @theme-clock-mode-style @theme-display-panes-active-colour
+__Reset @theme-display-panes-colour @theme-message-bg @theme-message-command-bg
+__Reset @theme-message-command-fg @theme-message-fg @theme-mode-bg
+__Reset @theme-mode-fg @themepack-status-left-area-left-format
+__Reset @themepack-status-left-area-right-format
+__Reset @themepack-status-right-area-left-format
+__Reset @themepack-status-right-area-remote-format
+__Reset @themepack-status-right-area-right-format
+__Reset @themepack-window-status-current-format @themepack-window-status-format
+__Reset @theme-status-bg @theme-status-fg @theme-status-interval
+__Reset @theme-status-justify @theme-status-left @theme-status-left-bg
+__Reset @theme-status-left-fg @theme-status-left-length @theme-status-right
+__Reset @theme-status-right-bg @theme-status-right-fg @theme-status-right-length
+__Reset @theme-window-status-activity-bg @theme-window-status-activity-fg
+__Reset @theme-window-status-current-bg @theme-window-status-current-fg
+__Reset @theme-window-status-current-format @theme-window-status-format
+__Reset @theme-window-status-separator @tmux_window_name_max_name_len
+__Reset visual-bell visual-silence window-active-style window-size
+__Reset window-status-activity-style window-status-bell-style
+__Reset window-status-current-format window-status-current-style
+__Reset window-status-format window-status-last-style window-status-separator
+__Reset window-status-style window-style word-separators wrap-search xterm-keys
 # vim: set ai et nu cin sts=4 sw=4 ts=4 tw=78 filetype=sh :
