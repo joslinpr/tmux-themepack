@@ -9,13 +9,14 @@ set-option -g pane-border-lines double
 %endif
 
 # Set The Pane Border Style For Panes Aside From The Active Pane.
-set -gwF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},dim"
+set -gF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},dim"
 
 # Set The Pane Border Style For The Active Pane.
-set -gwF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg}"
+#set -gwF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg}"
 
 # Set The Text Shown In Pane Border Status Lines.
-set-option -g pane-border-format " #D #W #{pane_title} "
+# use -o so it's is only set if unset
+set-option -gF pane-border-format " #D #W #{pane_title}"
 
 ## Pane Number Display
 set -gF @theme-display-panes-active-colour "#{@paul-color-grey-6}"
@@ -23,5 +24,5 @@ set -gF display-panes-active-colour "#{@theme-display-panes-active-colour}"
 set -gF @theme-display-panes-colour "#{@paul-color-grey-1}"
 set -gF display-panes-colour "#{@theme-display-panes-colour}"
 
-# End /paul/_pane.tmuxsh
+#################### End File: /paul/_pane.tmuxsh
 #  vim: set ai et nu cin sts=4 sw=4 ts=4 tw=78 filetype=tmux :

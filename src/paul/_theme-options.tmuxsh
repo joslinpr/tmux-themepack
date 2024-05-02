@@ -44,4 +44,5 @@ set -g  @theme-clock-mode-style 24
 ## Panes    ---------------------------------------------------------------------
 #########################################
 #= include "paul/_pane"
+#################### End File: /paul/_theme-options.tmuxsh
 #  vim: set ai et nu cin sts=4 sw=4 ts=4 tw=0 filetype=tmux :

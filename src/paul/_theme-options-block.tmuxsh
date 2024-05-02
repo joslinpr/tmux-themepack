@@ -14,5 +14,5 @@ set -gwF @theme-window-status-current-format " #{@themepack-window-status-curren
 # Override Separator
 set -gwF @theme-window-status-separator "#[fg=#{@theme-window-status-current-bg}]#{@theme-window-status-separator}"
 
-#################### End File: /paul/_theme-options-block-simple.tmuxsh
+#################### End File: /paul/_theme-options-block.tmuxsh
 #  vim: set noai noet nonu cin sts=0 sw=4 ts=4 tw=0 filetype=tmux :

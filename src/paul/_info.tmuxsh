@@ -7,15 +7,26 @@
 # https://github.com/powerline/fonts
 #
 # Order of Inclusion:
-# /paul/THEMENAME/cyan.tmuxtheme
-#   |-> /paul/_info.tmuxsh
-#   |-> /paul/_themepack-options.tmuxsh
-#   |-> /paul/_colors/cyan.tmuxsh
-#   |-> /paul/THEMENAME/_base.tmuxsh
-#     |-> /paul/_colors/base.tmuxsh
-#     |-> /paul/_paul-options.tmuxsh
-#     |-> /paul/_theme-options.tmuxsh
-#     |-> /paul/_theme-options-THEMENAME.tmuxsh
-#     |-> /paul/_apply.tmuxsh
-#   End /paul/THEMENAME/_base.tmuxsh
-# End /paul/_info.tmuxsh
+##  1 |---> /paul/block/blue.tmuxtheme
+##  2 |-----> /paul/_info.tmuxsh
+##  2 |-----> End /paul/_info.tmuxsh
+##  3 |-----> /paul/_themepack-options.tmuxsh
+##  3 |-----> End /paul/_themepack-options.tmuxsh
+##  4 |-----> /paul/_colors/blue.tmuxsh
+##  4 |-----> End /paul/_colors/blue.tmuxsh
+##  5 |-----> /paul/block-simple/_base.tmuxsh
+##  6 |-------> /paul/_colors/base.tmuxsh
+##  6 |-------> End /paul/_colors/base.tmuxsh
+##  7 |-------> /paul/_paul-options.tmuxsh
+##  7 |-------> End /paul/_paul-options.tmuxsh
+##  8 |---------> /paul/_theme-options.tmuxsh
+##  9 |---------> /paul/_pane.tmuxsh
+##  9 |---------> End /paul/_pane.tmuxsh
+##  8 |-------> End /paul/_theme-options.tmuxsh
+## 10 |-------> /paul/_theme-options-block-simple.tmuxsh
+## 10 |-------> End /paul/_theme-options-block-simple.tmuxsh
+## 11 |-------> /paul/_apply.tmuxsh
+## 11 |-------> End /paul/_apply.tmuxsh
+##  5 |-----> End /paul/block-simple/_base.tmuxsh
+##  1 |-----> End /paul/block/blue.tmuxtheme
+#################### End /paul/_info.tmuxsh

@@ -61,7 +61,7 @@ __Reset main-pane-width message-command-style message-style mode-keys
 __Reset mode-style monitor-activity monitor-bell monitor-silence mouse
 __Reset other-pane-height other-pane-width pane-active-border-style
 __Reset pane-base-index pane-border-format pane-border-lines pane-border-status
-__Reset pane-border-style @paul-color-activity-1 @paul-color-black-1
+__Reset pane-border-style pane-border-format @paul-color-activity-1 @paul-color-black-1
 __Reset @paul-color-grey-1 @paul-color-grey-2 @paul-color-grey-3
 __Reset @paul-color-grey-4 @paul-color-grey-5 @paul-color-grey-6
 __Reset @paul-color-main-1 @paul-color-main-2 @paul-color-main-3

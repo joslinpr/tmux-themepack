@@ -9,4 +9,4 @@ set -gwF @theme-window-status-format "  #{@themepack-window-status-format}  "
 set -gwF @theme-window-status-current-format "#[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg}]#[fg=#{@theme-window-status-current-fg},nobold] #{@themepack-window-status-current-format} #[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg},nobold]"
 set -gwF @theme-window-status-current-bg "#{@paul-color-black-1}"
 set -gwF @theme-window-status-current-fg "#{@paul-color-main-2}"
-#################### End File: /paul/_theme-options-default.tmuxsh
+#################### End File: /paul/_theme-options-double.tmuxsh
