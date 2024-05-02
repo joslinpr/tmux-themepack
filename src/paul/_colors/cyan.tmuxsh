@@ -1,5 +1,5 @@
 #################### File: /paul/_colors/cyan.tmuxsh
-set -gq @paul-color-main-1 colour39
-set -gq @paul-color-main-2 colour81
-set -gq @paul-color-main-3 colour75
+set -g @paul-color-main-1 colour39
+set -g @paul-color-main-2 colour81
+set -g @paul-color-main-3 colour75
 #################### End File: /paul/_colors/cyan.tmuxsh

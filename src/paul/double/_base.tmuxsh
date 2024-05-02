@@ -4,7 +4,7 @@
 #= include "paul/_paul-options"
 
 # paul Double Override
-set -gqF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
+set -gF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
 
 #= include "paul/_theme-options"
 #= include "paul/_theme-options-double"

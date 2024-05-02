@@ -7,15 +7,15 @@
 # https://github.com/powerline/fonts
 #
 # Order of Inclusion:
-# /paul/block/cyan.tmuxtheme
+# /paul/THEMENAME/cyan.tmuxtheme
 #   |-> /paul/_info.tmuxsh
 #   |-> /paul/_themepack-options.tmuxsh
 #   |-> /paul/_colors/cyan.tmuxsh
-#   |-> /paul/block/_base.tmuxsh
+#   |-> /paul/THEMENAME/_base.tmuxsh
 #     |-> /paul/_colors/base.tmuxsh
 #     |-> /paul/_paul-options.tmuxsh
 #     |-> /paul/_theme-options.tmuxsh
-#     |-> /paul/_theme-options-block.tmuxsh
+#     |-> /paul/_theme-options-THEMENAME.tmuxsh
 #     |-> /paul/_apply.tmuxsh
-#   End /paul/block/_base.tmuxsh
+#   End /paul/THEMENAME/_base.tmuxsh
 # End /paul/_info.tmuxsh

@@ -1,12 +1,12 @@
 #################### File: /paul/_themepack-options.tmuxsh
 # Themepack format options
 wg_is_keys_off="#([ $(tmux show-option -qv key-table) = 'off' ] && echo '｟OFF｠')"
-set -gq @themepack-status-left-area-left-format "#H"          # Host
-set -gq @themepack-status-left-area-right-format "#S"          # Session
-set -gq @themepack-status-right-area-remote-format "#[bg=#{@paul-status-right-area-remote-fg},fg=#{@theme-status-bg}]$wg_is_keys_off"    # Remote? Hours : Minutes
-set -gq @themepack-status-right-area-left-format " %H:%M"    # Remote? Hours : Minutes
-set -gq @themepack-status-right-area-right-format "%d %b %Y"  # day Mon Year
-set -gq @themepack-window-status-current-format "#I:#W#F"     # Index Window Flags
-set -gq @themepack-window-status-format "#I:#W#F"             # Index Window Flags
+set -g @themepack-status-left-area-left-format "#H"          # Host
+set -g @themepack-status-left-area-right-format "#S"          # Session
+set -g @themepack-status-right-area-remote-format "#[bg=#{@paul-status-right-area-remote-fg},fg=#{@theme-status-bg}]$wg_is_keys_off"    # Remote? Hours : Minutes
+set -g @themepack-status-right-area-left-format " %H:%M"    # Remote? Hours : Minutes
+set -g @themepack-status-right-area-right-format "%d %b %Y"  # day Mon Year
+set -g @themepack-window-status-current-format "#I:#W#F"     # Index Window Flags
+set -g @themepack-window-status-format "#I:#W#F"             # Index Window Flags
 
 #################### End File: /paul/_themepack-options.tmuxsh

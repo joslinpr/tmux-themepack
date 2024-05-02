@@ -1,24 +1,24 @@
 #################### File: /paul/_paul-options.tmuxsh
 # paul options
-set -gqF @paul-color-activity-1 "#{@paul-color-grey-6}"
-set -gqF @paul-status-bg "#{@paul-color-grey-1}"
-set -gqF @paul-status-fg "#{@paul-color-grey-4}"
+set -gF @paul-color-activity-1 "#{@paul-color-grey-6}"
+set -gF @paul-status-bg "#{@paul-color-grey-1}"
+set -gF @paul-status-fg "#{@paul-color-grey-4}"
 
-set -gqF @paul-status-left-area-left-bg "#{@paul-color-main-1}"
-set -gqF @paul-status-left-area-left-fg "#{@paul-status-bg}"
-set -gqF @paul-status-right-area-right-bg "#{@paul-color-grey-6}"
-set -gqF @paul-status-right-area-right-fg "#{@paul-status-bg}"
+set -gF @paul-status-left-area-left-bg "#{@paul-color-main-1}"
+set -gF @paul-status-left-area-left-fg "#{@paul-status-bg}"
+set -gF @paul-status-right-area-right-bg "#{@paul-color-grey-6}"
+set -gF @paul-status-right-area-right-fg "#{@paul-status-bg}"
 
-set -gqF @paul-status-left-area-right-bg "#{@paul-color-grey-2}"
-set -gqF @paul-status-left-area-right-fg "#{@paul-status-fg}"
-set -gqF @paul-status-right-area-left-bg "#{@paul-color-grey-2}"
-set -gqF @paul-status-right-area-left-fg "#{@paul-status-fg}"
+set -gF @paul-status-left-area-right-bg "#{@paul-color-grey-2}"
+set -gF @paul-status-left-area-right-fg "#{@paul-status-fg}"
+set -gF @paul-status-right-area-left-bg "#{@paul-color-grey-2}"
+set -gF @paul-status-right-area-left-fg "#{@paul-status-fg}"
 
-set -gqF @paul-status-left-bg "#{@paul-color-grey-1}"
-set -gqF @paul-status-right-bg "#{@paul-color-grey-1}"
-set -gqF @paul-status-right-fg "#{@paul-color-grey-5}"
-set -gqF @paul-status-left-fg "#{@paul-color-grey-5}"
+set -gF @paul-status-left-bg "#{@paul-color-grey-1}"
+set -gF @paul-status-right-bg "#{@paul-color-grey-1}"
+set -gF @paul-status-right-fg "#{@paul-color-grey-5}"
+set -gF @paul-status-left-fg "#{@paul-color-grey-5}"
 
-set -gqF @paul-status-right-area-remote-fg "#{@paul-color-main-1}"
-set -gqF @paul-status-right-area-remote-bg "#{@paul-status-bg}"
+set -gF @paul-status-right-area-remote-fg "#{@paul-color-main-1}"
+set -gF @paul-status-right-area-remote-bg "#{@paul-status-bg}"
 #################### End File: /paul/_paul-options.tmuxsh
