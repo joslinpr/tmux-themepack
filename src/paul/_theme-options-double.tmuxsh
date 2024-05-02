@@ -1,6 +1,12 @@
-#################### File: /paul/_theme-options-default.tmuxsh
-set -gF @theme-window-status-current-bg "#{@paul-color-black-1}"
-set -gF @theme-window-status-current-fg "#{@paul-color-main-2}"
-set -gF @theme-window-status-format "  #{@themepack-window-status-format}  "
-set -gF @theme-window-status-current-format "#[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg}]#[fg=#{@theme-window-status-current-fg},nobold] #{@themepack-window-status-current-format} #[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg},nobold]"
+#################### File: /paul/_theme-options-double.tmuxsh
+# Set The Type Of Characters Used For Drawing Pane Borders.
+# May Be One Of:  single | double | heavy | simple | number
+%if #{==:#{version},3.2}
+set-option -g pane-border-lines double
+%endif
+
+set -gwF @theme-window-status-format "  #{@themepack-window-status-format}  "
+set -gwF @theme-window-status-current-format "#[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg}]#[fg=#{@theme-window-status-current-fg},nobold] #{@themepack-window-status-current-format} #[fg=#{@theme-status-bg},bg=#{@theme-window-status-current-bg},nobold]"
+set -gwF @theme-window-status-current-bg "#{@paul-color-black-1}"
+set -gwF @theme-window-status-current-fg "#{@paul-color-main-2}"
 #################### End File: /paul/_theme-options-default.tmuxsh

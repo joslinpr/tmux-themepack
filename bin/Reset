@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+function __Reset(){
+    for attr in $@
+    do
+        printf "%s " "$attr" >&2
+        tmux set -gu "$attr"
+        tmux set -gwu "$attr"
+    done
+    printf "\n\n" >&2
+
+}
+
+__Reset @paul-color-activity-1 @paul-color-black-1 @paul-color-grey-1 \
+ @paul-color-grey-2 @paul-color-grey-3 @paul-color-grey-4 \
+ @paul-color-grey-5 @paul-color-grey-6 @paul-color-main-1 \
+ @paul-color-main-2 @paul-color-main-3
+
+__Reset @paul-status-bg @paul-status-fg @paul-status-left-area-left-bg \
+ @paul-status-left-area-left-fg @paul-status-left-area-right-bg \
+ @paul-status-left-area-right-fg @paul-status-left-bg @paul-status-left-fg \
+ @paul-status-right-area-left-bg @paul-status-right-area-left-fg \
+ @paul-status-right-area-remote-bg @paul-status-right-area-remote-fg \
+ @paul-status-right-area-right-bg @paul-status-right-area-right-fg \
+ @paul-status-right-bg @paul-status-right-fg
+
+__Reset status-bg status-fg status-left status-left-length status-left-style \
+ status-right status-right-length status-right-style status-style
+
+__Reset @theme-clock-mode-colour @theme-clock-mode-style \
+ @theme-display-panes-active-colour @theme-display-panes-colour \
+ @theme-message-bg @theme-message-command-bg @theme-message-command-fg \
+ @theme-message-fg @theme-mode-bg @theme-mode-fg
+
+__Reset @themepack @themepack-status-left-area-left-format \
+ @themepack-status-left-area-right-format \
+ @themepack-status-right-area-left-format \
+ @themepack-status-right-area-remote-format \
+ @themepack-status-right-area-right-format \
+ @themepack-window-status-current-format @themepack-window-status-format
+
+__Reset @theme-status-bg @theme-status-fg @theme-status-interval \
+ @theme-status-justify @theme-status-left @theme-status-left-bg \
+ @theme-status-left-fg @theme-status-left-length @theme-status-right \
+ @theme-status-right-bg @theme-status-right-fg @theme-status-right-length
+
+__Reset @theme-window-status-activity-bg @theme-window-status-activity-fg \
+ @theme-window-status-current-bg @theme-window-status-current-fg \
+ @theme-window-status-current-format @theme-window-status-format \
+ @theme-window-status-separator
+
+# vim: set ai et nu cin sts=4 sw=4 ts=4 tw=78 filetype=sh :
