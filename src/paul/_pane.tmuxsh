@@ -15,8 +15,7 @@ set -gF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-sta
 #set -gwF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg}"
 
 # Set The Text Shown In Pane Border Status Lines.
-# use -o so it's is only set if unset
-set-option -gF pane-border-format " #D #W #{pane_title}"
+set-option -gF pane-border-format " P: #{l:#{s/%//:#{p4:pane_id}}}W: #{l:#{s/@//:#{p4:window_id}}} #{l:#{pane_title}} "
 
 ## Pane Number Display
 set -gF @theme-display-panes-active-colour "#{@paul-color-grey-6}"

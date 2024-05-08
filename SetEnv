@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+DEBUG=0
+# Set SOURCED=1 if script must be sourced
+SOURCED=1
+_R=$(tput setaf 1) # Red
+_G=$(tput setaf 2) # Green
+_Y=$(tput setaf 3) # Yellow
+_B=$(tput setaf 4) # Blue
+_N=$(tput rmso; tput sgr0; tput setaf 7) # Color Off
+if ((SOURCED>0))
+then
+  (return 0 2>/dev/null) && sourced=true || sourced=false
+
+    # Exit if script is not sourced.
+    if [[ ${sourced} == false ]]; then
+      echo -e "${_R}Error:${_N} This script cannot be executed directly, it must be sourced.\n"
+      echo -e "Try running"
+      echo -e "${_G}source ${0}${_N}"
+      echo -e "or"
+      echo -e "${_G}. ${0}${_N}"
+      # can also call Usage()
+    fi
+fi
+
+export BASE=/home/pjoslin/Projects/tmux-themepack
+export INSTALLDIR="$HOME/.tmux/plugins/tmux-themepack"
+((DEBUG>0)) && printf "pathmunge %s after\n" "$BASE/bin" >&2
+pathmunge $BASE/bin after
+# vim: set ai et nu cin sts=2 sw=2 ts=2 tw=78 filetype=sh :
