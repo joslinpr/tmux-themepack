@@ -22,7 +22,7 @@ then
     fi
 fi
 
-export BASE=/home/pjoslin/Projects/tmux-themepack
+export BASE=$HOME/Projects/tmux-themepack
 export INSTALLDIR="$HOME/.tmux/plugins/tmux-themepack"
 ((DEBUG>0)) && printf "pathmunge %s after\n" "$BASE/bin" >&2
 pathmunge $BASE/bin after

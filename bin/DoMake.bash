@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 BASE=/home/pjoslin/Projects/tmux-themepack
+if [ ! -d "$BASE" ]
+then
+    BASE=/aaahome/pjoslin/Projects/tmux-themepack
+fi
 (
 cd $BASE
 make

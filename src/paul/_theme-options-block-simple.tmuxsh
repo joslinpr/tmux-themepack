@@ -3,6 +3,15 @@
 # May Be One Of:  single | double | heavy | simple | number
 %if #{==:#{version},3.2}
 set-option -g pane-border-lines single
+# Override Pane Format
+set-option -gF pane-border-format " #{l:#{pane_title}} "
+%else
+%if #{m:true,#{REMOTE}}
+# Override Pane Format
+set -gF pane-border-format "- REMOTE %H #{pane_title}} "
+%else
+set -gF pane-border-format " #{pane_title}} "
+%endif
 %endif
 
 set -g @themepack-status-right-area-right-format "%H:%M %d %b %Y"  # day Mon Year
@@ -20,7 +29,5 @@ set -gwF @theme-window-status-current-format "#[fg=#{@theme-window-status-curren
 # Override Separator
 set -gwF @theme-window-status-separator "#[fg=#{@theme-window-status-current-bg},dim]|#[fg=#{@theme-window-status-current-bg},nodim]"
 
-# Override Pane Format
-set-option -gF pane-border-format " #{l:#{pane_title}} "
 #################### End File: /paul/_theme-options-block-simple.tmuxsh
 #  vim: set noai noet nu cin sts=0 sw=4 ts=4 tw=0 filetype=tmux :
