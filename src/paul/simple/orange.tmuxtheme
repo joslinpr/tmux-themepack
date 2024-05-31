@@ -1,0 +1,11 @@
+#################### File: /paul/block/orange.tmuxtheme
+#
+# paul Orange Block - Tmux Themepack
+#= include "paul/_info"
+
+#= include "paul/_themepack-options"
+
+# paul color options
+#= include "paul/_colors/orange"
+#= include "paul/simple/_base"
+#################### End File: /paul/block/orange.tmuxtheme

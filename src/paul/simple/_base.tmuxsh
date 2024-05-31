@@ -1,0 +1,13 @@
+#################### File: /paul/simple/_base.tmuxsh
+#= include "paul/_colors/base"
+
+#= include "paul/_paul-options"
+
+# paul Block Override
+set -gF @paul-color-activity-1 "#{@paul-color-main-3}"
+set -gF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
+
+#= include "paul/_theme-options"
+#= include "paul/_theme-options-simple"
+#= include "_apply"
+#################### End File: /paul/simple/_base.tmuxsh

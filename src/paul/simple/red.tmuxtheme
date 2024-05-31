@@ -1,0 +1,11 @@
+#################### File: /paul/block/red.tmuxtheme
+#
+# paul Red Block - Tmux Themepack
+#= include "paul/_info"
+
+#= include "paul/_themepack-options"
+
+# paul color options
+#= include "paul/_colors/red"
+#= include "paul/simple/_base"
+#################### End File: /paul/block/red.tmuxtheme
