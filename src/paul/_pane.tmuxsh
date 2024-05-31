@@ -6,28 +6,28 @@
 # Set The Type Of Characters Used For Drawing Pane Borders.     type May Be One Of:
 # single | double | heavy | simple | number
 set-option -g pane-border-lines double
-
 # Set The Pane Border Style For Panes Aside From The Active Pane.
-set -gF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},dim"
-
+set -gF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},italics,underscore"
+# Set The Pane Border Style For The Active Pane.
+set -gF  pane-active-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},bold"
 # Set The Text Shown In Pane Border Status Lines.
 set-option -gF pane-border-format " P: #{l:#{s/%//:#{p4:pane_id}}}W: #{l:#{s/@//:#{p4:window_id}}} #{l:#{pane_title}} "
-
 %else
 # Turn on Pane Border Status
 set-window-option pane-border-status top
 # Set The Pane Border Style For Panes Aside From The Active Pane.
-set-window-option -gF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},dim"
+set-window-option -gF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg}"
+#set-window-option -gF  pane-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},dim"
 # Set The Pane Border Style For The Active Pane.
 set-window-option -gF pane-active-border-style "fg=#{@paul-status-left-area-left-bg},bg=#{@theme-status-left-bg},nodim"
 # Set The Text Shown In Pane Border Status Lines.
 set-window-option -gF pane-border-format " P: ##{pane_id} W: ##{window_id} ##{pane_title} "
 %endif
 
-## Pane Number Display
-set -gF @theme-display-panes-active-colour "#{@paul-color-grey-6}"
+# Pane Number Display
+set -gF @theme-display-panes-active-colour "#{@paul-color-main-1}"
 set -gF display-panes-active-colour "#{@theme-display-panes-active-colour}"
-set -gF @theme-display-panes-colour "#{@paul-color-grey-1}"
+set -gF @theme-display-panes-colour "#{@paul-color-grey-6}"
 set -gF display-panes-colour "#{@theme-display-panes-colour}"
 
 #################### End File: /paul/_pane.tmuxsh
