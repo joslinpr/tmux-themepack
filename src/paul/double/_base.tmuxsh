@@ -1,11 +1,8 @@
 #################### File: /paul/double/_base.tmuxsh
 #= include "paul/_colors/base"
-
 #= include "paul/_paul-options"
-
 # paul Double Override
 set -gF @paul-status-right-area-right-bg "#{@paul-color-main-1}"
-
 #= include "paul/_theme-options"
 #= include "paul/_theme-options-double"
 #= include "_apply"

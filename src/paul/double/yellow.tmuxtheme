@@ -2,10 +2,9 @@
 #
 # paul Double Yellow - Tmux Themepack
 #= include "paul/_info"
-
-#= include "paul/_themepack-options"
-
 # paul color options
 #= include "paul/_colors/yellow"
+#= include "paul/_themepack-options"
 #= include "paul/double/_base"
 #################### End File: /paul/double/yellow.tmuxtheme
+#  vim: set ai et nu cin sts=4 sw=4 ts=4 tw=78 filetype=tmux :

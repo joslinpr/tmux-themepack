@@ -7,5 +7,5 @@
 
 # paul color options
 #= include "paul/_colors/green"
-#= include "paul/block-simple/_base"
+#= include "paul/simple/_base"
 #################### End File: /paul/block/green.tmuxtheme
