@@ -6,7 +6,7 @@
 # Requires terminal to be using a powerline compatible font, find one here:
 # https://github.com/powerline/fonts
 #
-# Order of Inclusion:
+## Order of Inclusion:
 ##  1 |---> /paul/block/blue.tmuxtheme
 ##  2 |-----> /paul/_info.tmuxsh
 ##  2 |-----> End /paul/_info.tmuxsh
