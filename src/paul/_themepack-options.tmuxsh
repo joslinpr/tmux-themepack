@@ -1,5 +1,6 @@
 #################### File: /paul/_themepack-options.tmuxsh
 # Themepack format options
+# Todo: Colors have not been set yet.
 wg_is_keys_off="#([ $(tmux show-option -qv key-table) = 'off' ] && echo '｟OFF｠')"
 set -g @themepack-status-left-area-left-format "#H"          # Host
 set -g @themepack-status-left-area-right-format "#S"          # Session
