@@ -49,10 +49,14 @@ testmake :
 	@printf "INCLUDES=$(INCLUDES)\n\n"
 	@printf "THEMES=$(THEMES)\n\n"
 
-.SILENT: $(THEMES)
+# .SILENT: $(THEMES)
 $(THEMES): %.tmuxtheme: src/%.tmuxtheme $(INCLUDES)
 	$(BUILDER) "src/$@" "$@"
 
 $(TESTS): %.test: src/%.test
+
+.PHONY: list
+list:
+	@LC_ALL=C $(MAKE) -pRrq -f $(firstword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/(^|\n)# Files(\n|$$)/,/(^|\n)# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | grep -E -v -e '^[^[:alnum:]]' -e '^$@$$'
 
 #  vim: set ai et nu cin sts=0 sw=8 ts=8 tw=78 filetype=make :

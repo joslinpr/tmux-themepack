@@ -6,7 +6,7 @@ function Minify(){
   if [ -s "$Theme" -a -f "$Theme" ]
   then
     mv "$Theme" "$Theme".bak
-    sed -e '/^$/d;' -e '/vim:/d' "$Theme".bak > "$Theme"
+    sed -e '/^#[^#]/d' -e '/^[#]*$/d;' -e '/vim:/d' "$Theme".bak > "$Theme"
     ((VERBOSE>0)) && printf  "\t%s\n" "$Theme" >&2
   fi
 }
