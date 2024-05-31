@@ -11,7 +11,6 @@ set -g  @theme-status-justify left
 set -gF @theme-window-status-activity-bg "#{@theme-status-bg}"
 set -gF @theme-window-status-activity-fg "#{@paul-color-activity-1}"
 set -g  @theme-window-status-separator " | "
-# set -gwF window-status-separator "#{@theme-window-status-separator}"
 
 # right statusbar
 set -gF @theme-status-right-bg "#{@paul-status-right-bg}"
